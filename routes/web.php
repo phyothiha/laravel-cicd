@@ -7,3 +7,7 @@ Route::inertia('/', 'welcome')->name('home');
 Route::get('/health', function () {
     return 'ok';
 });
+
+Route::get('/test', function () {
+    return 'test';
+});

@@ -28,7 +28,6 @@ phases:
             - echo [buildspec] Entered the post_build phase...
             - echo [buildspec] Build completed on `date`
             - composer install --no-dev --prefer-dist --no-interaction --no-progress --optimize-autoloader
-            - php artisan optimize:clear
             - rm -f .env
             - rm -rf node_modules
 
